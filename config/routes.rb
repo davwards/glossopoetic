@@ -1,4 +1,6 @@
 Glossopoetic::Application.routes.draw do
+  resources :concepts
+
   resources :projects
 
   # The priority is based upon order of creation:
