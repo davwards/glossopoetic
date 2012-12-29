@@ -8,6 +8,7 @@ gem 'rails', '3.2.8'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 
@@ -27,6 +28,7 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara'
+  gem 'launchy'
 end
 
 group :production do
