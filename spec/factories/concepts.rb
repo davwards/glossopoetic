@@ -2,8 +2,7 @@
 
 FactoryGirl.define do
   factory :concept do
-    name "MyText"
-    description "MyText"
-    project_id 1
+    sequence(:name) {|n| "Concept#{n}"}
+    project
   end
 end

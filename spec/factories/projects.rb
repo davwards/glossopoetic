@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :project do
-    name "MyText"
+    sequence(:name) {|n| "Project#{n}"}
     description "MyText"
   end
 end

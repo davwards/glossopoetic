@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :reference do
     referencer_id 1
     referencee_id 1
-    parent_reference_id 1
-    placement 1
+    parent_reference_id nil
+    sequence(:placement) {|n| n }
   end
 end
