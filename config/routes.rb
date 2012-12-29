@@ -1,4 +1,6 @@
 Glossopoetic::Application.routes.draw do
+  resources :references
+
   resources :concepts
 
   resources :projects

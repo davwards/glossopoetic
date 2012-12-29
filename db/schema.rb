@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121229183119) do
+ActiveRecord::Schema.define(:version => 20121229184436) do
 
   create_table "concepts", :force => true do |t|
     t.text     "name"
@@ -26,6 +26,15 @@ ActiveRecord::Schema.define(:version => 20121229183119) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "references", :force => true do |t|
+    t.integer  "referencer_id"
+    t.integer  "referencee_id"
+    t.integer  "parent_reference_id"
+    t.integer  "placement"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
 end
